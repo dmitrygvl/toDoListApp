@@ -50,7 +50,7 @@ module.exports = {
       filename: '[name].[hash].css',
     }),
     new FaviconsWebpackPlugin('src/assets/img/favicon.png'),
-    new webpack.HotModuleReplacementPlugin(),
+    // new webpack.HotModuleReplacementPlugin(),
   ],
   module: {
     rules: [
