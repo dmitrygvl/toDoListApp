@@ -1,11 +1,9 @@
-const path = require('path');
-
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
-
 const webpack = require('webpack');
+const path = require('path');
 
 const isDev = process.env.NODE_ENV === 'development';
 

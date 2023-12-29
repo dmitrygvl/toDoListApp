@@ -2,7 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    //   "jest/globals": true,
+    'jest/globals': true,
   },
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'jest'],
@@ -38,7 +38,7 @@ module.exports = {
     //   'no-promise-executor-return': 'off',
     //   'class-methods-use-this': 'off',
     //   'no-unused-vars': 'off',
-    //   'no-param-reassign': ['error', { props: false }],
+    'no-param-reassign': ['error', { props: false }],
     //   'no-plusplus': 'off',
     //   'no-shadow': 'off',
     //   '@typescript-eslint/no-explicit-any': 'off',
