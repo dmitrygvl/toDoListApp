@@ -33,7 +33,7 @@ module.exports = {
       },
     ],
     //   'arrow-body-style': ['error', 'as-needed'],
-    //   '@typescript-eslint/no-unused-vars': 0,
+    '@typescript-eslint/no-unused-vars': 0,
     //   '@typescript-eslint/no-var-requires': 0,
     //   'no-promise-executor-return': 'off',
     //   'class-methods-use-this': 'off',

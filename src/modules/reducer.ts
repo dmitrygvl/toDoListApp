@@ -10,23 +10,25 @@ import {
 export const initialState: TasksState = [];
 
 export const tasksReducer = (
-  state: TasksState,
+  state: TasksState | undefined,
   action: TaskActionTypes,
+  // state: TasksState = initialState,
 ): TasksState => {
-  const currentState = state || initialState;
-
+  const currentState = state === undefined ? initialState : state;
   switch (action.type) {
-    case INIT_TASKS:
-      return action.payload;
     case ADD_TASK:
-      return [...state, action.payload];
+      return [...currentState, action.payload];
     case DELETE_TASK:
-      return state.filter((task) => task.id !== action.payload);
+      return currentState.filter((task) => task.id !== action.payload);
     case TOGGLE_TASK:
-      return state.map((task) =>
+      return currentState.map((task) =>
         task.id === action.payload ? { ...task, isDone: !task.isDone } : task,
       );
+    case INIT_TASKS:
+      return action.payload;
     default:
       return currentState;
   }
 };
+
+export default tasksReducer;

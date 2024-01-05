@@ -15,7 +15,6 @@ interface InitTasksAction {
   type: typeof INIT_TASKS;
   payload: TasksState;
 }
-
 interface AddTaskAction {
   type: typeof ADD_TASK;
   payload: Task;
