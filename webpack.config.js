@@ -48,7 +48,6 @@ module.exports = {
       filename: '[name].[hash].css',
     }),
     new FaviconsWebpackPlugin('src/assets/img/favicon.png'),
-    // new webpack.HotModuleReplacementPlugin(),
   ],
   module: {
     rules: [
@@ -58,6 +57,10 @@ module.exports = {
         use: {
           loader: 'babel-loader',
         },
+      },
+      {
+        test: /\.svg$/,
+        use: 'file-loader',
       },
       {
         test: /\.(sa|sc|c)ss$/i,
