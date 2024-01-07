@@ -1,14 +1,12 @@
 import './styles/styles.css';
-import { runApp } from './modules/runApp';
+import { renderAppUI } from './modules/renderAppUI';
 import { initTasks, addTask, deleteTask, toggleTask } from './modules/actions';
 import store from './modules/store';
-import crossIcon from './assets/img/cross.svg';
-import tickIcon from './assets/img/tick.svg';
 import { updateUI } from './modules/renderTask';
 
 const app = document.getElementById('app') as HTMLElement;
 
-runApp(app);
+renderAppUI(app);
 
 export const form = document.getElementById('form') as HTMLFormElement;
 export const taskInput = document.getElementById(
@@ -16,13 +14,11 @@ export const taskInput = document.getElementById(
 ) as HTMLInputElement;
 export const tasksList = document.getElementById('tasksList') as HTMLElement;
 
-// Инициализация состояния из localStorage
 const savedTasks = localStorage.getItem('tasks');
 const initialState = savedTasks ? JSON.parse(savedTasks) : [];
 
 store.dispatch(initTasks(initialState));
 
-// Обработчики событий
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const taskText = taskInput.value.trim();
@@ -47,12 +43,10 @@ tasksList.addEventListener('click', (event) => {
   }
 });
 
-// Подписка на изменения в store и сохранение задач в localStorage
 store.subscribe(() => {
   const state = store.getState();
   localStorage.setItem('tasks', JSON.stringify(state.tasks));
   updateUI(state.tasks);
 });
 
-// Инициализация UI
 updateUI(initialState);

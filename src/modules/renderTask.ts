@@ -20,7 +20,6 @@ function renderTask(task: Task) {
   tasksList.insertAdjacentHTML('beforeend', taskHTML);
 }
 
-// Функция для обновления UI
 export function updateUI(tasks: Task[]) {
   tasksList.innerHTML = '';
   tasks.forEach(renderTask);

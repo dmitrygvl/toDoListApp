@@ -122,8 +122,18 @@ h1 {
 }
 
 #taskInput {
-  background: #222031;
-  color: #e0e5ea;
+  /* background: #222031;
+  color: #e0e5ea; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 15px;
+  padding: 12px 14px 12px 16px;
+  border: 1px solid #d0d5dd;
+  background: #2f1d57;
+  box-shadow: 0 1px 2px 0 rgb(16 24 40 / 5%);
+  border-color: #2e6da4;
 }
 
 .up_down_btn {
@@ -247,4 +257,17 @@ h1 {
 
 .float-right {
   float: right;
+}
+
+.add-btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 15px;
+  padding: 12px 14px 12px 16px;
+  border: 1px solid #d0d5dd;
+  background: #6941c6;
+  box-shadow: 0 1px 2px 0 rgb(16 24 40 / 5%);
+  border-color: #2e6da4;
 }
