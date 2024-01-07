@@ -2,9 +2,9 @@ import { renderAppUI } from './renderAppUI';
 import { Task } from './types';
 import { initTasks, addTask, deleteTask, toggleTask } from './actions';
 import store from './store';
-// import { tasksList } from './renderTask';
 import crossIcon from '../assets/img/cross.svg';
 import tickIcon from '../assets/img/tick.svg';
+import { updateUI } from './renderTask';
 
 export function runApp(appEl: HTMLElement) {
   renderAppUI(appEl);
@@ -31,7 +31,7 @@ export function runApp(appEl: HTMLElement) {
   //   tasksList.insertAdjacentHTML("beforeend", taskHTML);
   // }
 
-  // // Функция для обновления UI
+  // Функция для обновления UI
   // function updateUI(tasks: Task[]) {
   //   tasksList.innerHTML = "";
   //   tasks.forEach(renderTask);

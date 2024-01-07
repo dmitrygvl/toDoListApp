@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "lint": "prettier --check . && eslint . && stylelint \"**/*.{css, scss}\" && npx tsc --noEmit",
-    "lint:fix": "prettier --write . && eslint . --fix  && stylelint \"**/*.{css, scss}\" --fix && npx tsc --noEmit",
+    "lint:fix": "prettier --write . && eslint . --fix && npx tsc --noEmit",
     "prepare": "husky install",
     "check-ts": "tsc --noEmit",
     "start": "webpack serve --mode development",
@@ -62,7 +62,6 @@
       "eslint --cache --fix",
       "prettier --write"
     ],
-    "*.{css,scss,md,yml,json,html}": "prettier . --write",
-    "*.{css, scss}": "stylelint --fix"
+    "*.{css,scss,md,yml,json,html}": "prettier . --write"
   }
 }

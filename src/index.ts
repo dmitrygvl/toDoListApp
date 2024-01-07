@@ -1,44 +1,20 @@
 import './styles/styles.css';
 import { runApp } from './modules/runApp';
-
-import { Task } from './modules/types';
 import { initTasks, addTask, deleteTask, toggleTask } from './modules/actions';
 import store from './modules/store';
-// import { tasksList } from './renderTask';
 import crossIcon from './assets/img/cross.svg';
 import tickIcon from './assets/img/tick.svg';
+import { updateUI } from './modules/renderTask';
 
 const app = document.getElementById('app') as HTMLElement;
 
 runApp(app);
 
-const form = document.getElementById('form') as HTMLFormElement;
-const taskInput = document.getElementById('taskInput') as HTMLInputElement;
-const tasksList = document.getElementById('tasksList') as HTMLElement;
-
-// Функция для рендеринга задачи
-function renderTask(task: Task) {
-  const cssClass = task.isDone ? 'task-title task-title--done' : 'task-title';
-  const taskHTML = `
-      <li id="${task.id}" class="list-group-item d-flex justify-content-between task-item">
-        <span class="${cssClass}">${task.text}</span>
-        <div class="task-item__buttons">
-          <button type="button" data-action="done" class="btn-action">
-            <img src="${tickIcon}" alt="Done" width="18" height="18">
-          </button>
-          <button type="button" data-action="delete" class="btn-action">
-            <img src="${crossIcon}" alt="Delete" width="18" height="18">
-          </button>
-        </div>
-      </li>`;
-  tasksList.insertAdjacentHTML('beforeend', taskHTML);
-}
-
-// Функция для обновления UI
-function updateUI(tasks: Task[]) {
-  tasksList.innerHTML = '';
-  tasks.forEach(renderTask);
-}
+export const form = document.getElementById('form') as HTMLFormElement;
+export const taskInput = document.getElementById(
+  'taskInput',
+) as HTMLInputElement;
+export const tasksList = document.getElementById('tasksList') as HTMLElement;
 
 // Инициализация состояния из localStorage
 const savedTasks = localStorage.getItem('tasks');

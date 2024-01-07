@@ -58,7 +58,7 @@
 export function renderAppUI(rootEl: HTMLElement) {
   rootEl.innerHTML = `
   <div class="container">
-  <h1>Список поставленных задач</h1>
+  <h1>Your tasks</h1>
   <div class="h4 mb-5"></div>
   <div class="card mb-4">
     <ul id="tasksList" class="list-group list-group-flush"></ul>
@@ -73,16 +73,12 @@ export function renderAppUI(rootEl: HTMLElement) {
             autocomplete="off"
             class="form-control"
             id="taskInput"
-            placeholder="Текст задачи"
+            placeholder="Enter your task"
             required
           />
-          <small id="emailHelp" class="form-text text-muted"
-            >Что делаем, сколько времени тратим, какой результат
-            получаем.</small
-          >
         </div>
         <button type="submit" class="btn btn-primary btn-lg active">
-          Добавить
+          Add
         </button>
       </form>
     </div>
