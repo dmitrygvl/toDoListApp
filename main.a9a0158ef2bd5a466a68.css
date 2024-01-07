@@ -1,6 +1,6 @@
 body {
-  background-color: #222031;
   background: linear-gradient(#2f2a43, #222031);
+  background-color: #222031;
   color: #fff;
   font-family: Poppins, sans-serif;
   height: 100vh;
@@ -119,11 +119,10 @@ h1 {
 
 .d-flex {
   border-color: white;
+  display: flex;
 }
 
 #taskInput {
-  /* background: #222031;
-  color: #e0e5ea; */
   margin-top: 20px;
   margin-bottom: 20px;
   cursor: pointer;
@@ -178,10 +177,6 @@ h1 {
 
 .main {
   height: 400px;
-}
-
-.d-flex {
-  display: flex;
 }
 
 .task-title {
