@@ -34,6 +34,7 @@ module.exports = {
     ],
     '@typescript-eslint/no-unused-vars': 0,
     'no-param-reassign': ['error', { props: false }],
+    'default-param-last': 0,
     'import/prefer-default-export': 'off',
     'import/no-unresolved': 'off',
     'import/extensions': ['warn', 'never'],

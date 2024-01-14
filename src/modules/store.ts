@@ -7,6 +7,10 @@ interface Store<S, A> {
   subscribe: (listener: () => void) => () => void;
 }
 
+export interface RootState {
+  tasks: TasksState;
+}
+
 export const createStore = <S, A>(
   reducer: (state: S, action: A) => S,
   initialState: S,
@@ -30,10 +34,6 @@ export const createStore = <S, A>(
 
   return { getState, dispatch, subscribe };
 };
-
-export interface RootState {
-  tasks: TasksState;
-}
 
 export const combineReducers =
   <S, A>(reducers: {
