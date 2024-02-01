@@ -5,7 +5,7 @@ import {
   DELETE_TASK,
   TOGGLE_TASK,
   TaskActionTypes,
-} from './types';
+} from '../types/types';
 
 export const initTasks = (tasks: Task[]): TaskActionTypes => ({
   type: INIT_TASKS,

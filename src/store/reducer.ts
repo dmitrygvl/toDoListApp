@@ -5,14 +5,13 @@ import {
   ADD_TASK,
   DELETE_TASK,
   TOGGLE_TASK,
-} from './types';
+} from '../types/types';
 
 export const initialState: TasksState = [];
 
 export const tasksReducer = (
   state: TasksState | undefined,
   action: TaskActionTypes,
-  // state: TasksState = initialState,
 ): TasksState => {
   const currentState = state === undefined ? initialState : state;
   switch (action.type) {

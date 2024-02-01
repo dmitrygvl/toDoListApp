@@ -1,4 +1,4 @@
-import { Task } from './types';
+import { Task } from '../types/types';
 import crossIcon from '../assets/img/cross.svg';
 import tickIcon from '../assets/img/tick.svg';
 import { tasksList } from '../index';

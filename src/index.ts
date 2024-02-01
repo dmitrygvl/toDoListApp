@@ -1,7 +1,7 @@
 import './styles/styles.css';
 import { renderAppUI } from './modules/renderAppUI';
-import { initTasks, addTask, deleteTask, toggleTask } from './modules/actions';
-import store from './modules/store';
+import { initTasks, addTask, deleteTask, toggleTask } from './store/actions';
+import store from './store/store';
 import { updateUI } from './modules/renderTask';
 
 const app = document.getElementById('app') as HTMLElement;

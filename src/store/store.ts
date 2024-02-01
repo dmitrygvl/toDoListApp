@@ -1,4 +1,4 @@
-import { TaskActionTypes, TasksState } from './types';
+import { TaskActionTypes, TasksState } from '../types/types';
 import tasksReducer from './reducer';
 
 interface Store<S, A> {
