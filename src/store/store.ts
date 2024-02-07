@@ -7,7 +7,7 @@ interface Store<S, A> {
   subscribe: (listener: () => void) => () => void;
 }
 
-export interface RootState {
+interface RootState {
   tasks: TasksState;
 }
 

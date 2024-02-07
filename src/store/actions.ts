@@ -1,16 +1,11 @@
 import {
   Task,
-  INIT_TASKS,
   ADD_TASK,
   DELETE_TASK,
   TOGGLE_TASK,
+  INIT_TASKS,
   TaskActionTypes,
 } from '../types/types';
-
-export const initTasks = (tasks: Task[]): TaskActionTypes => ({
-  type: INIT_TASKS,
-  payload: tasks,
-});
 
 export const addTask = (task: Task): TaskActionTypes => ({
   type: ADD_TASK,
@@ -25,4 +20,9 @@ export const deleteTask = (id: number): TaskActionTypes => ({
 export const toggleTask = (id: number): TaskActionTypes => ({
   type: TOGGLE_TASK,
   payload: id,
+});
+
+export const initTasks = (tasks: Task[]): TaskActionTypes => ({
+  type: INIT_TASKS,
+  payload: tasks,
 });
