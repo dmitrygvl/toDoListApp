@@ -2,7 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    //   "jest/globals": true,
+    'jest/globals': true,
   },
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'jest'],
@@ -32,19 +32,11 @@ module.exports = {
         ignoreComments: true,
       },
     ],
-    //   'arrow-body-style': ['error', 'as-needed'],
-    //   '@typescript-eslint/no-unused-vars': 0,
-    //   '@typescript-eslint/no-var-requires': 0,
-    //   'no-promise-executor-return': 'off',
-    //   'class-methods-use-this': 'off',
-    //   'no-unused-vars': 'off',
-    //   'no-param-reassign': ['error', { props: false }],
-    //   'no-plusplus': 'off',
-    //   'no-shadow': 'off',
-    //   '@typescript-eslint/no-explicit-any': 'off',
-    //   '@typescript-eslint/no-shadow': 'warn',
+    '@typescript-eslint/no-unused-vars': 0,
+    'no-param-reassign': ['error', { props: false }],
+    'default-param-last': 0,
     'import/prefer-default-export': 'off',
-    'import/no-unresolved': 'off', // https://github.com/typescript-eslint/typescript-eslint/issues/1624
-    'import/extensions': ['warn', 'never'], // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
+    'import/no-unresolved': 'off',
+    'import/extensions': ['warn', 'never'],
   },
 };
