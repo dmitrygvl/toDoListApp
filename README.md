@@ -5,7 +5,7 @@
 
   <p>
   <a href=""><img src="https://img.shields.io/azure-devops/build/rustwasm/gloo/6.svg?style=flat-square" alt="Build Status" /></a>
-    <img alt="Badge" src="https://github.com/dmitrygvl/gameOfLife/actions/workflows/sanity-check.yml/badge.svg" />
+    <img alt="Badge" src="https://github.com/dmitrygvl/toDoListApp/actions/workflows/sanity-check.yml/badge.svg" />
   </p>
 
 _**[Deployed here](https://dmitrygvl.github.io/toDoListApp/)**_
@@ -65,6 +65,8 @@ A simple application for recording and managing tasks. Tasks can be added, marke
 - **Tools Setup:** Jest, ESLint, Webpack, Husky and GitHub Actions are configured and installed to support development.
 - **Workflow for CI/CD:** Configured workflow to perform linting, testing and deployment, speeding up the CI/CD process.
 
+## Getting started <a name="getting-started"></a>
+
 ### Prerequisites <a name="prerequisites"></a>
 
 :warning: Before installing the project latest version of **npm** should be installed.
@@ -78,7 +80,7 @@ npm install -g npm@latest
 1. Clone the repo
 
 ```
-git clone https://github.com/dmitrygvl/gameOfLife.git
+git clone https://github.com/dmitrygvl/toDoListApp.git
 ```
 
 2. Install NPM packages
