@@ -8,7 +8,7 @@
     <img alt="Badge" src="https://github.com/dmitrygvl/gameOfLife/actions/workflows/sanity-check.yml/badge.svg" />
   </p>
 
-_**[Deployed here](https://dmitrygvl.github.io/gameOfLife/)**_
+_**[Deployed here](https://dmitrygvl.github.io/toDoListApp/)**_
 
 ## </div>
 
